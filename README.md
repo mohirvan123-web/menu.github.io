@@ -1,229 +1,272 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" style="scroll-behavior: smooth;">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Selamat Datang di Gacoan</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 min-h-screen flex flex-col">
+<body class="bg-gray-100 min-h-screen flex flex-col font-sans">
 
-  <!-- Header -->
-  <header class="bg-red-500 text-white p-4 shadow-md">
-    <h1 class="text-xl font-bold">Gacoan Jakarta</h1>
+  <header class="bg-red-600 text-white p-4 shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold tracking-wide">Gacoan Jakarta</h1>
+      <a href="#cart-section" class="md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.102 1.743.707 1.743H18a2 2 0 002-2V7.786" />
+        </svg>
+      </a>
+    </div>
   </header>
 
-  <!-- Main Content -->
-  <main class="flex-1 container mx-auto p-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+  <nav class="bg-white sticky top-16 z-40 shadow-sm md:shadow-md p-4">
+    <div class="container mx-auto">
+      <ul class="flex justify-around items-center space-x-4 overflow-x-auto whitespace-nowrap md:justify-center">
+        <li><a href="#noodle-section" class="text-gray-800 font-semibold px-4 py-2 rounded-full hover:bg-gray-200 transition-colors">🍜 Noodle</a></li>
+        <li><a href="#dimsum-section" class="text-gray-800 font-semibold px-4 py-2 rounded-full hover:bg-gray-200 transition-colors">🥟 Dimsum</a></li>
+        <li><a href="#bar-section" class="text-gray-800 font-semibold px-4 py-2 rounded-full hover:bg-gray-200 transition-colors">🥤 Beverage</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- Menu Section -->
-    <section class="md:col-span-2">
-      <h2 class="text-lg font-semibold mb-4">MENU</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+  <main class="flex-1 container mx-auto p-6 flex flex-col md:flex-row gap-8">
 
-        <!-- Card Menu -->
-        <div class="bg-white rounded-2xl shadow p-4 flex flex-col">
-          <img src="https://iili.io/KA6Y3xf.md.jpg/" alt="Mie Pedas" as width="80" height="80" class="rounded-xl mb-3">
-          <h3 class="font-bold text-lg">Mie Suit</h3>
-          <p class="text-yellow-400 text-sm">NOODLE.</p>
-          <p class="font-semibold mt-2">Rp 11.000</p>
-          <button class="add-to-cart mt-auto bg-red-500 text-white rounded-xl py-2 hover:bg-red-600">Tambah</button>
-        </div>
-        <div class="bg-white rounded-2xl shadow p-4 flex flex-col">
-          <img src="https://iili.io/KA6Y3xf.md.jpg/" alt="Mie Pedas" as width="80" height="80" class="rounded-xl mb-3">
-          <h3 class="font-bold text-lg">Mie Gaocoan Lv. 0</h3>
-          <p class="text-yellow-400 text-sm">NOODLE.</p>
-          <p class="font-semibold mt-2">Rp 11.000</p>
-          <button class="add-to-cart mt-auto bg-red-500 text-white rounded-xl py-2 hover:bg-red-600">Tambah</button>
-        </div>
-        <div class="bg-white rounded-2xl shadow p-4 flex flex-col">
-          <img src="https://iili.io/KA6Y3xf.md.jpg/" alt="Mie Pedas" as width="80" height="80" class="rounded-xl mb-3">
-          <h3 class="font-bold text-lg">Mie Gaocoan Lv. 1</h3>
-          <p class="text-yellow-400 text-sm">NOODLE.</p>
-          <p class="font-semibold mt-2">Rp 11.000</p>
-          <button class="add-to-cart mt-auto bg-red-500 text-white rounded-xl py-2 hover:bg-red-600">Tambah</button>
-        </div>
-        <div class="bg-white rounded-2xl shadow p-4 flex flex-col">
-          <img src="https://iili.io/KA6Y3xf.md.jpg/" alt="Mie Pedas" as width="80" height="80" class="rounded-xl mb-3">
-          <h3 class="font-bold text-lg">Mie Gaocoan Lv. 2</h3>
-          <p class="text-yellow-400 text-sm">NOODLE.</p>
-          <p class="font-semibold mt-2">Rp 11.000</p>
-          <button class="add-to-cart mt-auto bg-red-500 text-white rounded-xl py-2 hover:bg-red-600">Tambah</button>
-        </div>
-        <div class="bg-white rounded-2xl shadow p-4 flex flex-col">
-          <img src="https://iili.io/KA6Y3xf.md.jpg/" alt="Mie Pedas" as width="80" height="80" class="rounded-xl mb-3">
-          <h3 class="font-bold text-lg">Mie Gaocoan Lv. 3</h3>
-          <p class="text-yellow-400 text-sm">NOODLE.</p>
-          <p class="font-semibold mt-2">Rp 11.000</p>
-          <button class="add-to-cart mt-auto bg-red-500 text-white rounded-xl py-2 hover:bg-red-600">Tambah</button>
-        </div><div class="bg-white rounded-2xl shadow p-4 flex flex-col">
-          <img src="https://iili.io/KA6Y3xf.md.jpg/" alt="Mie Pedas" as width="80" height="80" class="rounded-xl mb-3">
-          <h3 class="font-bold text-lg">Mie Gaocoan Lv. 4</h3>
-          <p class="text-yellow-400 text-sm">NOODLE.</p>
-          <p class="font-semibold mt-2">Rp 11.000</p>
-          <button class="add-to-cart mt-auto bg-red-500 text-white rounded-xl py-2 hover:bg-red-600">Tambah</button>
-        </div>
-        <div class="bg-white rounded-2xl shadow p-4 flex flex-col">
-          <img src="https://iili.io/KA6Y3xf.md.jpg/" alt="Mie Pedas" as width="80" height="80" class="rounded-xl mb-3">
-          <h3 class="font-bold text-lg">Mie Gaocoan Lv. 6</h3>
-          <p class="text-yellow-400 text-sm">NOODLE.</p>
-          <p class="font-semibold mt-2">Rp 12.000</p>
-          <button class="add-to-cart mt-auto bg-red-500 text-white rounded-xl py-2 hover:bg-red-600">Tambah</button>
-        </div>
-        <div class="bg-white rounded-2xl shadow p-4 flex flex-col">
-          <img src="https://iili.io/KA6Y3xf.md.jpg/" alt="Mie Pedas" as width="80" height="80" class="rounded-xl mb-3">
-          <h3 class="font-bold text-lg">Mie Gaocoan Lv. 8</h3>
-          <p class="text-yellow-400 text-sm">NOODLE.</p>
-          <p class="font-semibold mt-2">Rp 12.000</p>
-          <button class="add-to-cart mt-auto bg-red-500 text-white rounded-xl py-2 hover:bg-red-600">Tambah</button>
-        </div>
-        <div class="bg-white rounded-2xl shadow p-4 flex flex-col">
-          <img src="https://iili.io/KA6Y3xf.md.jpg/" alt="Mie Pedas" as width="80" height="80" class="rounded-xl mb-3">
-          <h3 class="font-bold text-lg">Mie Hompimpa Lv. 1</h3>
-          <p class="text-yellow-400 text-sm">NOODLE.</p>
-          <p class="font-semibold mt-2">Rp 11.000</p>
-          <button class="add-to-cart mt-auto bg-red-500 text-white rounded-xl py-2 hover:bg-red-600">Tambah</button>
-        </div>
-        <div class="bg-white rounded-2xl shadow p-4 flex flex-col">
-          <img src="https://iili.io/KA6Y3xf.md.jpg/" alt="Mie Pedas" as width="80" height="80" class="rounded-xl mb-3">
-          <h3 class="font-bold text-lg">Mie Hompimpa Lv. 2</h3>
-          <p class="text-yellow-400 text-sm">NOODLE.</p>
-          <p class="font-semibold mt-2">Rp 11.000</p>
-          <button class="add-to-cart mt-auto bg-red-500 text-white rounded-xl py-2 hover:bg-red-600">Tambah</button>
-        </div>
-        <div class="bg-white rounded-2xl shadow p-4 flex flex-col">
-          <img src="https://iili.io/KA6Y3xf.md.jpg/" alt="Mie Pedas" as width="80" height="80" class="rounded-xl mb-3">
-          <h3 class="font-bold text-lg">Mie Hompimpa Lv. 3</h3>
-          <p class="text-yellow-400 text-sm">NOODLE.</p>
-          <p class="font-semibold mt-2">Rp 11.000</p>
-          <button class="add-to-cart mt-auto bg-red-500 text-white rounded-xl py-2 hover:bg-red-600">Tambah</button>
-        </div>
-        <div class="bg-white rounded-2xl shadow p-4 flex flex-col">
-          <img src="https://iili.io/KA6Y3xf.md.jpg/" alt="Mie Pedas" as width="80" height="80" class="rounded-xl mb-3">
-          <h3 class="font-bold text-lg">Mie Hompimpa Lv. 4</h3>
-          <p class="text-yellow-400 text-sm">NOODLE.</p>
-          <p class="font-semibold mt-2">Rp 11.000</p>
-          <button class="add-to-cart mt-auto bg-red-500 text-white rounded-xl py-2 hover:bg-red-600">Tambah</button>
-        </div>
-        <div class="bg-white rounded-2xl shadow p-4 flex flex-col">
-          <img src="https://iili.io/KA6Y3xf.md.jpg/" alt="Mie Pedas" as width="80" height="80" class="rounded-xl mb-3">
-          <h3 class="font-bold text-lg">Mie Hompimpa Lv. 6</h3>
-          <p class="text-yellow-400 text-sm">NOODLE.</p>
-          <p class="font-semibold mt-2">Rp 12.000</p>
-          <button class="add-to-cart mt-auto bg-red-500 text-white rounded-xl py-2 hover:bg-red-600">Tambah</button>
-        </div>
-        <div class="bg-white rounded-2xl shadow p-4 flex flex-col">
-          <img src="https://iili.io/KA6Y3xf.md.jpg/" alt="Mie Pedas" as width="80" height="80" class="rounded-xl mb-3">
-          <h3 class="font-bold text-lg">Mie Hompimpa Lv. 8</h3>
-          <p class="text-yellow-400 text-sm">NOODLE.</p>
-          <p class="font-semibold mt-2">Rp 12.000</p>
-          <button class="add-to-cart mt-auto bg-red-500 text-white rounded-xl py-2 hover:bg-red-600">Tambah</button>
-        </div>
-        
-        <div class="bg-white rounded-2xl shadow p-4 flex flex-col">
-          <img src="https://via.placeholder.com/200x120" alt="Dimsum" class="rounded-xl mb-3">
-          <h3 class="font-bold text-lg">Udang Keju</h3>
-          <p class="text-blue-600 text-sm">DIMSUM.</p>
-          <p class="font-semibold mt-2">Rp 10.000</p>
-          <button class="add-to-cart mt-auto bg-red-500 text-white rounded-xl py-2 hover:bg-red-600">Tambah</button>
-        </div>
-        <div class="bg-white rounded-2xl shadow p-4 flex flex-col">
-          <img src="https://via.placeholder.com/200x120" alt="Dimsum" class="rounded-xl mb-3">
-          <h3 class="font-bold text-lg">Udang Rambutan</h3>
-          <p class="text-blue-600 text-sm">DIMSUM.</p>
-          <p class="font-semibold mt-2">Rp 10.000</p>
-          <button class="add-to-cart mt-auto bg-red-500 text-white rounded-xl py-2 hover:bg-red-600">Tambah</button>
-        </div>
-        <div class="bg-white rounded-2xl shadow p-4 flex flex-col">
-          <img src="https://via.placeholder.com/200x120" alt="Dimsum" class="rounded-xl mb-3">
-          <h3 class="font-bold text-lg">Lumpia Udang</h3>
-          <p class="text-blue-600 text-sm">DIMSUM.</p>
-          <p class="font-semibold mt-2">Rp 10.000</p>
-          <button class="add-to-cart mt-auto bg-red-500 text-white rounded-xl py-2 hover:bg-red-600">Tambah</button>
-        </div>
-        <div class="bg-white rounded-2xl shadow p-4 flex flex-col">
-          <img src="https://via.placeholder.com/200x120" alt="Dimsum" class="rounded-xl mb-3">
-          <h3 class="font-bold text-lg">Siomay Ayam</h3>
-          <p class="text-blue-600 text-sm">DIMSUM.</p>
-          <p class="font-semibold mt-2">Rp 10.000</p>
-          <button class="add-to-cart mt-auto bg-red-500 text-white rounded-xl py-2 hover:bg-red-600">Tambah</button>
-        </div>
-        <div class="bg-white rounded-2xl shadow p-4 flex flex-col">
-          <img src="https://via.placeholder.com/200x120" alt="Dimsum" class="rounded-xl mb-3">
-          <h3 class="font-bold text-lg">pangsit Goreng</h3>
-          <p class="text-blue-600 text-sm">DIMSUM.</p>
-          <p class="font-semibold mt-2">Rp 11.000</p>
-          <button class="add-to-cart mt-auto bg-red-500 text-white rounded-xl py-2 hover:bg-red-600">Tambah</button>
-        </div>
+    <section class="flex-1">
+      <h2 class="text-3xl font-bold mb-6 text-gray-800 border-b-2 border-red-500 pb-2">SELAMAT DATAG DI GACOAN .....</h2>
 
-        <div class="bg-white rounded-2xl shadow p-4 flex flex-col">
-          <img src="https://via.placeholder.com/200x120" alt="Es Teh" class="rounded-xl mb-3">
-          <h3 class="font-bold text-lg">Es Gobak Sodor</h3>
-          <p class="text-gray-600 text-sm">BAR.</p>
-          <p class="font-semibold mt-2">Rp 10.000</p>
-          <button class="add-to-cart mt-auto bg-red-500 text-white rounded-xl py-2 hover:bg-red-600">Tambah</button>
+      <h3 id="noodle-section" class="text-2xl font-bold mb-4 mt-8 text-gray-700">🍜 Noodle</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+          <h4 class="font-bold text-lg text-gray-900 mt-2">Mie Suit</h4>
+          <p class="text-yellow-500 text-sm font-semibold">NOODLE</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 11.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-1 px-2 font-sm hover:bg-red-700 transition-colors duration-300">Tambah</button>
         </div>
-        <div class="bg-white rounded-2xl shadow p-4 flex flex-col">
-          <img src="https://via.placeholder.com/200x120" alt="Es Teh" class="rounded-xl mb-3">
-          <h3 class="font-bold text-lg">Es Petak Umpet</h3>
-          <p class="text-gray-600 text-sm">Minuman segar pelepas dahaga.</p>
-          <p class="font-semibold mt-2">Rp 10.000</p>
-          <button class="add-to-cart mt-auto bg-red-500 text-white rounded-xl py-2 hover:bg-red-600">Tambah</button>
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+          <h4 class="font-bold text-lg text-gray-900 mt-2">Mie Gacoan Lv.0</h4>
+          <p class="text-yellow-500 text-sm font-semibold">NOODLE</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 11.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-1 px-2 font-sm hover:bg-red-700 transition-colors duration-300">Tambah</button>
         </div>
-        <div class="bg-white rounded-2xl shadow p-4 flex flex-col">
-          <img src="https://via.placeholder.com/200x120" alt="Es Teh" class="rounded-xl mb-3">
-          <h3 class="font-bold text-lg">Es Teklek</h3>
-          <p class="text-gray-600 text-sm">Minuman segar pelepas dahaga.</p>
-          <p class="font-semibold mt-2">Rp 10.000</p>
-          <button class="add-to-cart mt-auto bg-red-500 text-white rounded-xl py-2 hover:bg-red-600">Tambah</button>
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+          <h4 class="font-bold text-lg text-gray-900 mt-2">Mie gacoan Lv. 1</h4>
+          <p class="text-yellow-500 text-sm font-semibold">NOODLE</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 11.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-1 px-2 font-sm hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+          <h4 class="font-bold text-lg text-gray-900 mt-2">Mie Gacoan Lv. 2</h4>
+          <p class="text-yellow-500 text-sm font-semibold">NOODLE</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 11.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-1 px-2 font-sm hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+          <h4 class="font-bold text-lg text-gray-900 mt-2">Mie Gacoan Lv. 3</h4>
+          <p class="text-yellow-500 text-sm font-semibold">NOODLE</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 11.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-1 px-2 font-sm hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+          <h4 class="font-bold text-lg text-gray-900 mt-2">Mie Gacoan Lv. 4</h4>
+          <p class="text-yellow-500 text-sm font-semibold">NOODLE</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 11.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-1 px-2 font-sm hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+          <h4 class="font-bold text-lg text-gray-900 mt-2">Mie Gacoan Lv. 6</h4>
+          <p class="text-yellow-500 text-sm font-semibold">NOODLE</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 11.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-1 px-2 font-sm hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+          <h4 class="font-bold text-lg text-gray-900 mt-2">Mie Gacoan Lv. 8</h4>
+          <p class="text-yellow-500 text-sm font-semibold">NOODLE</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 11.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-1 px-2 font-sm hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+          <h4 class="font-bold text-lg text-gray-900 mt-2">Mie Hompimpa Lv. 1</h4>
+          <p class="text-yellow-500 text-sm font-semibold">NOODLE</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 11.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-1 px-2 font-sm hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+         <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+          <h4 class="font-bold text-lg text-gray-900 mt-2">Mie Hompimpa Lv. 2</h4>
+          <p class="text-yellow-500 text-sm font-semibold">NOODLE</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 11.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-1 px-2 font-sm hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+         <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+          <h4 class="font-bold text-lg text-gray-900 mt-2">Mie Hompimpa Lv. 3</h4>
+          <p class="text-yellow-500 text-sm font-semibold">NOODLE</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 11.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-1 px-2 font-sm hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+         <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+          <h4 class="font-bold text-lg text-gray-900 mt-2">Mie Hompimpa Lv. 4</h4>
+          <p class="text-yellow-500 text-sm font-semibold">NOODLE</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 11.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-1 px-2 font-sm hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+          <h4 class="font-bold text-lg text-gray-900 mt-2">Mie Hompimpa Lv. 6</h4>
+          <p class="text-yellow-500 text-sm font-semibold">NOODLE</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 12.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-1 px-2 font-sm hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div><div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+          <h4 class="font-bold text-lg text-gray-900 mt-2">Mie Hompimpa Lv. 8</h4>
+          <p class="text-yellow-500 text-sm font-semibold">NOODLE</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 12.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-1 px-2 font-sm hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+      </div>
+      
+      
+
+      <h3 id="dimsum-section" class="text-2xl font-bold mb-4 mt-8 text-gray-700">🥟 Dimsum</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+          <h4 class="font-bold text-lg text-gray-900 mt-2">Udang Keju</h4>
+          <p class="text-blue-600 text-sm font-semibold">DIMSUM.</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 10.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-1 px-2 font-semibold hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+          <h4 class="font-bold text-lg text-gray-900 mt-2">Udang Rambutan</h4>
+          <p class="text-blue-600 text-sm font-semibold">DIMSUM.</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 10.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-1 px-2 font-semibold hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+          <h4 class="font-bold text-lg text-gray-900 mt-2">Lumpia Udang</h4>
+          <p class="text-blue-600 text-sm font-semibold">DIMSUM.</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 10.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-1 px-2 font-semibold hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+          <h4 class="font-bold text-lg text-gray-900 mt-2">Siomay Ayam</h4>
+          <p class="text-blue-600 text-sm font-semibold">DIMSUM.</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 10.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-1 px-2 font-semibold hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+          <h4 class="font-bold text-lg text-gray-900 mt-2">Pangsit Goreng</h4>
+          <p class="text-blue-600 text-sm font-semibold">DIMSUM.</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 11.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-1 px-2 font-semibold hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+      </div>
+
+      <h3 id="bar-section" class="text-2xl font-bold mb-4 mt-8 text-gray-700">🥤 Beverage</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+           <h4 class="font-bold text-lg text-gray-900 mt-2">Es Gobak Sodor</h4>
+          <p class="text-gray-600 text-sm font-semibold">BAR.</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 10.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-2 px-4 font-semibold hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+           <h4 class="font-bold text-lg text-gray-900 mt-2">Es Petak Umpet</h4>
+          <p class="text-gray-600 text-sm font-semibold">BAR.</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 10.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-2 px-4 font-semibold hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+           <h4 class="font-bold text-lg text-gray-900 mt-2">Es Teklek</h4>
+          <p class="text-gray-600 text-sm font-semibold">BAR.</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 10.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-2 px-4 font-semibold hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+           <h4 class="font-bold text-lg text-gray-900 mt-2">Es Sluku Bathok</h4>
+          <p class="text-gray-600 text-sm font-semibold">BAR.</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 10.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-2 px-4 font-semibold hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
         </div>
 
-       
-        
-        
+      <h3 id="bar-section" class="text-2xl font-bold mb-4 mt-8 text-gray-700">🥤 Beverage</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+           <h4 class="font-bold text-lg text-gray-900 mt-2">Green Thai Tea</h4>
+          <p class="text-gray-600 text-sm font-semibold">BAR.</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 10.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-2 px-4 font-semibold hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+           <h4 class="font-bold text-lg text-gray-900 mt-2">Thai Tea</h4>
+          <p class="text-gray-600 text-sm font-semibold">BAR.</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 10.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-2 px-4 font-semibold hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+           <h4 class="font-bold text-lg text-gray-900 mt-2">Lemon Tea</h4>
+          <p class="text-gray-600 text-sm font-semibold">BAR.</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 10.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-2 px-4 font-semibold hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+           <h4 class="font-bold text-lg text-gray-900 mt-2">Tea</h4>
+          <p class="text-gray-600 text-sm font-semibold">BAR.</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 10.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-2 px-4 font-semibold hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+           <h4 class="font-bold text-lg text-gray-900 mt-2">Coklat</h4>
+          <p class="text-gray-600 text-sm font-semibold">BAR.</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 10.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-2 px-4 font-semibold hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+           <h4 class="font-bold text-lg text-gray-900 mt-2">Vanilla Late</h4>
+          <p class="text-gray-600 text-sm font-semibold">BAR.</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 10.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-2 px-4 font-semibold hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+           <h4 class="font-bold text-lg text-gray-900 mt-2">Teh Tarik</h4>
+          <p class="text-gray-600 text-sm font-semibold">BAR.</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 10.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-2 px-4 font-semibold hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col transform transition-transform duration-300 hover:scale-[1.02]">
+           <h4 class="font-bold text-lg text-gray-900 mt-2">Air Mineral</h4>
+          <p class="text-gray-600 text-sm font-semibold">BAR.</p>
+          <p class="font-bold text-lg mt-2 text-red-600">Rp 10.000</p>
+          <button class="add-to-cart mt-auto bg-red-600 text-white rounded-full py-2 px-4 font-semibold hover:bg-red-700 transition-colors duration-300">Tambah</button>
+        </div>
       </div>
     </section>
 
-    <!-- Cart Section -->
-    <aside class="bg-white rounded-2xl shadow p-4 flex flex-col">
-      <h2 class="text-lg font-semibold mb-4">🛒 Keranjang</h2>
-      <ul id="cart" class="space-y-2 text-sm text-gray-700">
-        <li class="text-gray-400">Belum ada item</li>
+    <aside id="cart-section" class="bg-white rounded-2xl shadow-lg p-6 flex flex-col sticky top-24 h-fit md:w-1/3 lg:w-1/4">
+      <h2 class="text-xl font-bold mb-4 text-gray-800">🛒 Keranjang Belanja</h2>
+      <ul id="cart" class="space-y-4 text-sm text-gray-700">
+        <li class="text-gray-400 italic text-center py-4">Keranjang Anda kosong</li>
       </ul>
-
-      <!-- Total -->
-      <div class="border-t mt-4 pt-4 flex justify-between font-bold">
+      <div class="border-t-2 border-gray-200 mt-6 pt-6 flex justify-between items-center font-bold text-lg">
         <span>Total:</span>
-        <span id="total">Rp 0</span>
+        <span id="total" class="text-green-600">Rp 0</span>
       </div>
-
-      <!-- Nama Pelanggan -->
-      <div class="mt-4">
+      <div class="mt-6">
         <label class="block text-sm font-semibold mb-2">Nama Pelanggan:</label>
-        <input id="customerName" type="text" placeholder="Masukkan nama Anda" class="w-full border rounded-xl p-2" />
+        <input id="customerName" type="text" placeholder="Masukkan nama Anda" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-red-500 transition-colors" />
       </div>
-
-      <!-- Pilihan Take Away / Dine In -->
       <div class="mt-4">
         <label class="block text-sm font-semibold mb-2">Pilih Tipe Pesanan:</label>
-        <select id="orderType" class="w-full border rounded-xl p-2">
+        <select id="orderType" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-red-500 transition-colors">
           <option value="Dine In">Dine In</option>
           <option value="Take Away">Take Away</option>
         </select>
       </div>
-
-      <!-- Checkout -->
-      <button id="checkout" class="w-full mt-4 bg-green-500 text-white rounded-xl py-2 hover:bg-green-600">Checkout</button>
+      <button id="checkout" class="w-full mt-6 bg-green-600 text-white rounded-lg py-3 font-semibold hover:bg-green-700 transition-colors duration-300 shadow-md">Checkout via WhatsApp</button>
     </aside>
 
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-gray-200 text-center p-4 text-sm text-gray-600">
+  <footer class="bg-gray-200 text-center p-4 text-sm text-gray-600 mt-8">
     © 2025 Pilih Menu Online
   </footer>
 
-  <!-- JavaScript -->
   <script>
     const cart = document.getElementById("cart");
     const totalEl = document.getElementById("total");
@@ -247,7 +290,6 @@
     function tambahKeKeranjang(item, harga) {
       ensureEmptyTextRemoved();
 
-      // cek apakah item sudah ada di keranjang
       let existing = [...cart.children].find(li => li.dataset.item === item);
       if (existing) {
         let qtySpan = existing.querySelector(".qty");
@@ -259,10 +301,9 @@
         return;
       }
 
-      // buat elemen list item
       const li = document.createElement("li");
       li.dataset.item = item;
-      li.dataset.harga = harga; // simpan harga per item (number akan tersimpan sebagai string di dataset)
+      li.dataset.harga = harga;
       li.classList.add("flex", "justify-between", "items-center", "gap-2");
 
       li.innerHTML = `
@@ -276,7 +317,6 @@
         </div>
       `;
 
-      // tombol +
       li.querySelector(".plus").addEventListener("click", () => {
         let qtySpan = li.querySelector(".qty");
         let qty = parseInt(qtySpan.innerText, 10);
@@ -286,7 +326,6 @@
         updateTotalDisplay();
       });
 
-      // tombol -
       li.querySelector(".minus").addEventListener("click", () => {
         let qtySpan = li.querySelector(".qty");
         let qty = parseInt(qtySpan.innerText, 10);
@@ -298,7 +337,6 @@
         }
       });
 
-      // tombol hapus
       li.querySelector(".hapus").addEventListener("click", () => {
         let qty = parseInt(li.querySelector(".qty").innerText, 10);
         totalHarga -= harga * qty;
@@ -307,7 +345,7 @@
         updateTotalDisplay();
 
         if (cart.children.length === 0) {
-          cart.innerHTML = `<li class="text-gray-400">Belum ada item</li>`;
+          cart.innerHTML = `<li class="text-gray-400 italic text-center py-4">Keranjang Anda kosong</li>`;
         }
       });
 
@@ -316,26 +354,22 @@
       updateTotalDisplay();
     }
 
-    // pasang event listener hanya untuk tombol "Tambah"
     addButtons.forEach(btn => {
       btn.addEventListener("click", () => {
-        const card = btn.closest(".flex.flex-col"); // naik ke card
-        const item = card.querySelector("h3").innerText.trim();
-        const hargaText = card.querySelector("p.font-semibold").innerText;
+        const card = btn.closest(".flex.flex-col");
+        const item = card.querySelector("h4").innerText.trim();
+        const hargaText = card.querySelector("p.font-bold").innerText;
         const harga = parseInt(hargaText.replace(/[^\d]/g, ""), 10);
         tambahKeKeranjang(item, harga);
       });
     });
 
-    // === Redirect ke WhatsApp via API WhatsApp (lebih kompatibel) ===
     checkoutBtn.addEventListener("click", () => {
-      // validasi keranjang
       if (cart.children.length === 1 && cart.children[0].classList.contains("text-gray-400")) {
         alert("Keranjang masih kosong!");
         return;
       }
 
-      // validasi nama
       const nama = customerName.value.trim();
       if (!nama) {
         alert("Silakan isi Nama Pelanggan terlebih dahulu.");
@@ -343,7 +377,6 @@
         return;
       }
 
-      // bangun pesan
       let pesan = `Halo, saya mau pesan.%0A`;
       pesan += `Nama: ${nama}%0A%0A`;
       pesan += `Daftar pesanan:%0A`;
@@ -360,11 +393,9 @@
       pesan += `Tipe Pesanan: ${orderType.value}%0A%0A`;
       pesan += `Terima kasih 🙏`;
 
-      // nomor WA tujuan: pakai format internasional tanpa '+' (contoh: 62...)
-      const noWA = "628991190404"; // ubah di sini kalau perlu
+      const noWA = "628991190404";
       const url = `https://api.whatsapp.com/send?phone=${noWA}&text=${pesan}`;
 
-      // buka di tab baru
       window.open(url, "_blank", "noopener,noreferrer");
     });
   </script>
