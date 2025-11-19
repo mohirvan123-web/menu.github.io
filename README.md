@@ -237,8 +237,8 @@
 </head>
 <body>
     <div class="main-container">
-        <h1>Timer Thawing Reminder 🧊 (SHARED)</h1>
-        <p>Status timer disinkronkan secara real-time. UI Modern: Biru & Pink.</p>
+        <h1>Gacoan Timer Thawing 🧊</h1>
+        <p>timer disinkronkan secara real-time.</p>
         
         <div class="timer-list" id="timer-list">
             </div>
